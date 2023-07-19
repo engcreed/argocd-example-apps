@@ -15,5 +15,5 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     helm:
       values: |
-        replicas: 3
+        replicaCount: 3
     targetRevision: {{ .Values.spec.source.targetRevision }}
