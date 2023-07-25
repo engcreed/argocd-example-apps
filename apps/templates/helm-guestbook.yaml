@@ -14,6 +14,8 @@ spec:
     path: helm-guestbook
     repoURL: {{ .Values.spec.source.repoURL }}
     helm:
+      valuesFiles:
+        - common-values.yaml
       values: |
         replicaCount: 3
     targetRevision: {{ .Values.spec.source.targetRevision }}
